@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Inter-FZ";
+    src:
+        local("Inter-VariableFont"),
+        url(Inter-VariableFont.ttf) format("ttf supports variations"),
+        url(Inter-VariableFont.ttf) format("ttf-variations");
+    font-display: swap;
+    font-weight: 400 700;
+}
+
+@font-face {
+    font-family: "Playfair-FZ";
+    src:
+        local("PlayfairDisplay-VariableFont"),
+        url(PlayfairDisplay-VariableFont.ttf) format("ttf supports variations"),
+        url(PlayfairDisplay-VariableFont.ttf) format("ttf-variations");
+    font-display: swap;
+    font-weight: 900;
+}
+

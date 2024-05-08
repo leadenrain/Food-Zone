@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+
+    .page {
+        font-family: "Inter-VariableFont";
+    }
+
+    .title {
+        font-family: "PlayfairDisplay-VariableFont";
+    }
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    max-inline-size: 1920px;
+    max-block-size: 1080px;
+    line-height: 1.45;
+    background-color: #EEEEEE;
+}
+
+.content {
+    padding-block-start: 117px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 100%;
+    font-family: Inter-FZ, sans-serif;
+    padding-block-start: clamp(1.5625rem, 0.9888rem + 1.8323vw, 3.1875rem);; /*значение 51-25 1920-501*/
+    padding-inline-start: clamp(2.5rem, 0.1168rem + 7.611vw, 9.25rem); /*значения 148-40 1920-501*/
+    padding-inline-end: clamp(2.5rem, 0.1168rem + 7.611vw, 9.25rem); /*значения 148-40 1920-501*/
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-txt {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.logo-txt-clr {
+    color: #FE7F26;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.menu__list {
+    display: flex;
+    gap: clamp(4.375rem, 2.5779rem + 4.1017vw, 7.5rem); /*значения 120-70 1920-701*/
+    list-style: none;
+}
+
+.item-link {
+    color: #6B6B6B;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-block-start: 117px;
+}
+
+.hero {
+    /* display: flex;
+    justify-content: center; */
+    inline-size: clamp(26.25rem, 16.7393rem + 30.3735vw, 53.1875rem); /*значения 850-420 1920-501*/
+    aspect-ratio: 1/1;
+}
+
+.hero-img {
+    inline-size: 100%;
+}
+
+.order {
+   position: absolute; 
+   background-color: #FE7F26;
+   border: transparent;
+   border-radius: 91px;
+   bottom: 0;
+
+}
+
+.order__txt {
+    display: flex;
+    gap: 14px;
+    font-family: Inter-FZ;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 26px 62px;
+}
+
+
+.title-zone {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    left: 130px;
+    bottom: 350px;
+    inline-size: 570px;
+}
+
+.title {
+    font-family: Playfair-FZ;
+    font-size: 151px;
+    font-weight: 900;
+    line-height: 0.8;
+}
+
+.subtitle {
+    display: flex;
+    gap: 17px;
+    padding-inline-start: 65px;
+}
+
+.line {
+    display: block;
+    align-self: center;
+    inline-size: 57px;
+}
+
+.subtitle-line {
+    padding-block-end: 26px;
+}
+
+.subtitle-txt {
+    font-family: Inter-FZ;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.product {
+    position: absolute;
+    right: 0;
+    top: 190px;
+}
+
+.product__list {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.product__list-item {
+    list-style: none;
+    
+}
+
+.card {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top-left-radius: 88px;
+    border-bottom-left-radius: 88px;
+    padding-inline-end: 58px;
+    border: none;
+}
+
+.card-img {
+    padding-inline-start: 28px;
+    padding-block-start: 19px;
+    padding-block-end: 19px;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: Inter-FZ;
+    inline-size: 240px;
+    
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 21px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+@media (width <= 700px) {
+    .header {
+        flex-direction: column;
+    }
+    .logo {
+        align-self: start;
+    }
+    .menu {
+        inline-size: 100%;
+        justify-content: space-between;
+    }
+    .menu__list {
+        gap: clamp(4.375rem, -6.6394rem + 35.1759vw, 8.75rem); /*значение 140-70 700-501*/
+    }
+}
+
+@media (width <= 500px) {
+
+}
+

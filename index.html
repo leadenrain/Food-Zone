@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/animation.css">
   <link rel="stylesheet" href="styles/media.css">
-  <script src="/scripts/script.js"></script>
+  
 </head>
 
 <body class="page">
@@ -107,23 +107,23 @@
         <picture class="hero__imgset">
           <source src="img/Caviar Express.avif" type="image/avif">
           <source src="img/Caviar Express.webp" type="image/webp">
-          <img src="/img/Caviar Express.png" class="hero-img hero-change" alt="" />
+          <img class="hero-img hero-active" src="/img/Caviar Express.png" alt="" />
         </picture>
-     <!--<picture class="hero__imgset">
+        <picture class="hero__imgset">
           <source src="img/Blue Berry.avif" type="image/avif">
           <source src="img/Blue Berry.webp" type="image/webp">
-          <img src="img/Blue Berry.png" class="hero__img" alt="" />
+          <img class="hero-img" src="img/Blue Berry.png" alt="" />
         </picture>
         <picture class="hero__imgset">
           <source src="img/Beef Steak.avif" type="image/avif">
           <source src="img/Beef Steak.webp" type="image/webp">
-          <img src="img/Beef Steak.png" class="hero__img" alt="" />
+          <img class="hero-img" src="img/Beef Steak.png" alt="" />
         </picture>
         <picture class="hero__imgset">
           <source src="img/Strawberry Finx.avif" type="image/avif">
           <source src="img/Strawberry Finx.webp" type="image/webp">
-          <img src="img/Strawberry Finx.png" class="hero__img" alt="" />
-        </picture> -->
+          <img class="hero-img" src="img/Strawberry Finx.png" alt="" />
+        </picture>
       </div>
       <button class="order" type="submit">
         <div class="order__txt">
@@ -144,23 +144,8 @@
       <h2 class="subtitle-txt">Norem ipsum dolor sit amet, consectetur.</h2>
     </div>
   </main>
-
-  <!-- <script>
-    const cardNodes = document.querySelectorAll(".card");
-    cardNodes.forEach((element) => {
-      element.addEventListener("click", () => {
-        const clickedNode = document.querySelector(".active");
-        clickedNode?.classList.remove("active");
-        element.classList.add("active");
-      });
-    });
-    function changeImage(imageIndex) {
-      const imageNodes = document.querySelectorAll(".hero__img");
-      const hero__imgChangeNode = document.querySelector(".hero-change");
-      hero__imgChangeNode?.classList.remove("hero-change");
-      imageNodes[imageIndex]?.classList.add("hero-change");
-    }
-  </script> -->
+  <script src="/scripts/script.js"></script>
+ 
 </body>
 
 </html>

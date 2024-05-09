@@ -5,36 +5,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>XUM</title>
-  <link rel="icon" href="./img/favicon.ico" sizes="any" />
-  <link rel="icom" href="./svg/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+  <link rel="icom" href="svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/animation.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <script src="/scripts/script.js"></script>
 </head>
 
 <body class="page">
   <header class="header">
-    <div class="logo">
+    <a class="link" href="#0"><div class="logo">
       <svg class="logo-img" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M26.9732 26.0147H7.09767M17.0354 26.0147V17.4966M21.2945 26.0147V20.3359M12.7764 26.0147V20.3359M26.9732 31.6934V16.5454C27.5003 16.3533 27.9844 16.0589 28.3974 15.6793C28.8105 15.2996 29.1446 14.842 29.3804 14.3329C29.6161 13.8238 29.749 13.2731 29.7714 12.7125C29.7938 12.1518 29.7052 11.5923 29.5108 11.066C29.3164 10.5397 29.0199 10.057 28.6384 9.64557C28.2569 9.23416 27.7979 8.90215 27.2877 8.66862C26.7775 8.43508 26.2263 8.30462 25.6655 8.28471C25.1048 8.2648 24.5457 8.35585 24.0202 8.55262C23.495 5.96028 20.5278 3.2998 17.0354 3.2998C13.543 3.2998 10.5759 5.96028 10.0506 8.55262C8.99069 8.16103 7.81864 8.20654 6.79228 8.67911C5.76592 9.15169 4.96932 10.0126 4.57774 11.0725C4.18616 12.1325 4.23166 13.3045 4.70424 14.3309C5.17682 15.3572 6.03776 16.1538 7.09767 16.5454V31.6934H26.9732Z"
           stroke="black" stroke-width="2.83936" />
       </svg>
-      <span class="logo-txt logo-txt-clr">x</span><span class="logo-txt">um</span>
-    </div>
+      <span class="logo-txt logo-txt-clr">x</span><span class="logo-txt">um</span></div>
+    </a>
+    
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu-item">
-          <a class="item-link" href="#0">Breakfast</a>
+          <a class="link item-link" href="#0">Breakfast</a>
         </li>
         <li class="menu-item">
-          <a class="item-link" href="#0">Lunch</a>
+          <a class="link item-link" href="#0">Lunch</a>
         </li>
         <li class="menu-item">
-          <a class="item-link" href="#0">Dinner</a>
+          <a class="link item-link" href="#0">Dinner</a>
         </li>
       </ul>
-      <a href="#0">
-        <svg class="bag" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a class="link bag" href="#0">
+        <svg class="bag__img" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M2.47472 20.3112C1.25922 15.4492 0.651468 13.0197 1.92788 11.3848C3.20288 9.75 5.71039 9.75 10.7211 9.75H17.2803C22.2925 9.75 24.7971 9.75 26.0735 11.3848C27.35 13.0183 26.7422 15.4507 25.5267 20.3112C24.7532 23.4038 24.3679 24.9494 23.2147 25.8504C22.0615 26.75 20.4678 26.75 17.2803 26.75H10.7211C7.53364 26.75 5.93988 26.75 4.78672 25.8504C3.63355 24.9494 3.2468 23.4038 2.47472 20.3112Z"
             stroke="#8C8C8C" stroke-width="2.125" />
@@ -50,45 +54,10 @@
   </header>
 
   <main>
-    <div class="hero-container">
-      <div class="hero">
-        <picture class="hero__imgset">
-          <source src="img/Caviar Express.avif" type="image/avif">
-          <source src="img/Caviar Express.webp" type="image/webp">
-          <img src="/img/Caviar Express.png" class="hero-img hero-change" alt="" />
-        </picture>
-     <!--<picture class="hero__imgset">
-          <source src="img/Blue Berry.avif" type="image/avif">
-          <source src="img/Blue Berry.webp" type="image/webp">
-          <img src="img/Blue Berry.png" class="hero__img" alt="" />
-        </picture>
-        <picture class="hero__imgset">
-          <source src="img/Beef Steak.avif" type="image/avif">
-          <source src="img/Beef Steak.webp" type="image/webp">
-          <img src="img/Beef Steak.png" class="hero__img" alt="" />
-        </picture>
-        <picture class="hero__imgset">
-          <source src="img/Strawberry Finx.avif" type="image/avif">
-          <source src="img/Strawberry Finx.webp" type="image/webp">
-          <img src="img/Strawberry Finx.png" class="hero__img" alt="" />
-        </picture> -->
-      </div>
-      <button class="order" type="submit">
-        <div class="order__txt">
-          <span class="price">$20</span>
-          <span class="line">
-            <hr>
-          </span>
-          <span class="">order now</span>
-        </div>
-      </button>
-    </div>
-
-    
     <div class="product">  
       <ul class="product__list">
         <li class="product__list-item">
-          <button class="card">
+          <button class="card card-active">
             <img src="/img/caviar.png" alt="" class="card-img" />
             <div class="card-txt">
               <h3 class="card-title">Caviar Express</h3>
@@ -133,6 +102,39 @@
         </li>
       </ul> 
     </div> 
+    <div class="hero-container">
+      <div class="hero">
+        <picture class="hero__imgset">
+          <source src="img/Caviar Express.avif" type="image/avif">
+          <source src="img/Caviar Express.webp" type="image/webp">
+          <img src="/img/Caviar Express.png" class="hero-img hero-change" alt="" />
+        </picture>
+     <!--<picture class="hero__imgset">
+          <source src="img/Blue Berry.avif" type="image/avif">
+          <source src="img/Blue Berry.webp" type="image/webp">
+          <img src="img/Blue Berry.png" class="hero__img" alt="" />
+        </picture>
+        <picture class="hero__imgset">
+          <source src="img/Beef Steak.avif" type="image/avif">
+          <source src="img/Beef Steak.webp" type="image/webp">
+          <img src="img/Beef Steak.png" class="hero__img" alt="" />
+        </picture>
+        <picture class="hero__imgset">
+          <source src="img/Strawberry Finx.avif" type="image/avif">
+          <source src="img/Strawberry Finx.webp" type="image/webp">
+          <img src="img/Strawberry Finx.png" class="hero__img" alt="" />
+        </picture> -->
+      </div>
+      <button class="order" type="submit">
+        <div class="order__txt">
+          <span class="price">$20</span>
+          <span class="line">
+            <hr>
+          </span>
+          <span class="">order now</span>
+        </div>
+      </button>
+    </div>
     <div class="title-zone">
       <h1 class="title">Food Zone</h1>
       <div class="subtitle">
